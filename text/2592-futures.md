@@ -112,7 +112,7 @@ and `poll` it until completion inside the task that it creates for it.
 
 The implementation of an executor schedules the tasks it owns in a cooperative
 fashion. It is up to the implementation of an executor whether one or more
-operation system threads are used for this, as well as how many tasks can be
+operating system threads are used for this, as well as how many tasks can be
 spawned on it in parallel. Some executor implementations may only be able to
 drive a single `Future` to completion, while others can provide the ability to
 dynamically accept new `Future`s that are driven to completion inside tasks.
